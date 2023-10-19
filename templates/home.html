@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
     <title>Flask Project</title>
-    <style>
+    <!-- <style>
         h1{
         font-size: 40px;
         font-family:'Roboto',sans-serif;
@@ -25,6 +32,13 @@
             margin: 0 auto;
 max-width: 800px;
         }
+    </style> -->
+    <style>
+        #banner{
+            height:360px;
+            object-fit: cover;
+            width: 100%;
+        }
     </style>
    <!-- create header icon -->
 
@@ -32,15 +46,14 @@ max-width: 800px;
 </head>
 <body>
     <!-- This code block displays a heading with the text "Hello, world!" on the home page of a website. -->
-    <div id="container">
-    <h1>Careers Portal</h1>
+    <div class="container">
+    <h1 class="text-center">Careers Portal</h1>
     <img id="banner" src="./static/covercareer.jpg" height="320px"  alt="">
-    <p class="bodyText"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit adipisci suscipit expedita accusamus quo ad iure? Quas dolore dignissimos qui magni repellat tempora nulla inventore, debitis, ex officia possimus!</span><span>Quas at maiores sunt. Esse dolore id repellat soluta qui excepturi, nesciunt rem nostrum sint aliquid tempore assumenda explicabo est voluptas quam quae vero nihil ad voluptatibus. Ad, vel vitae!</span><span>Obcaecati, ipsam quasi voluptatibus blanditiis cumque dignissimos nulla praesentium, explicabo maxime repudiandae culpa. Deserunt accusamus eius dolorem, necessitatibus architecto repudiandae fugit quasi, neque, maxime eligendi vero iste omnis quidem? Corporis!</span></p>
+    <p class="lead"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit adipisci suscipit expedita accusamus quo ad iure? Quas dolore dignissimos qui magni repellat tempora nulla inventore, debitis, ex officia possimus!</span><span>Quas at maiores sunt. Esse dolore id repellat soluta qui excepturi, nesciunt rem nostrum sint aliquid tempore assumenda explicabo est voluptas quam quae vero nihil ad voluptatibus. Ad, vel vitae!</span><span>Obcaecati, ipsam quasi voluptatibus blanditiis cumque dignissimos nulla praesentium, explicabo maxime repudiandae culpa. Deserunt accusamus eius dolorem, necessitatibus architecto repudiandae fugit quasi, neque, maxime eligendi vero iste omnis quidem? Corporis!</span></p>
     <h2>Open Positions</h2>
     <p class="bodyText">TODO - Show Jobs Here</p>
-    <div style="text-align:center">
+    <div>
     <button id="contactBtn">Contact Us</button>
-    <p>Copyright</p>
 </div>
 </div>
 </body>
