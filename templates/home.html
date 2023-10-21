@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    {% include 'nav.html' %}
     <div class="container">
         <h1 class="text-center mt-1 mb-4">{{company}} Portal</h1>
         <img id="banner" src="./static/covercareer.jpg" height="320px" alt="">
@@ -45,8 +46,8 @@
     <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
     </div>
-    <p class="mt-4 text-center">Copyright @ 2023, Yasir</p>
     </div>
+    {% include 'footer.html' %}
 </body>
 
 </html>
