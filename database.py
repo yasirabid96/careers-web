@@ -3,7 +3,7 @@ import sqlalchemy
 print(sqlalchemy.__version__)
 from sqlalchemy import create_engine, text
 
-db_string = "mysql+pymysql://ir8mwvq6hgv9mshpbj3g:pscale_pw_eDUpvTJJrTVNUSqocjNkXcFt1UVKRuWLxJ1Cp4amc3u@aws.connect.psdb.cloud/yasircareer?charset=utf8mb4"
+db_string = "mysql+pymysql://ltchlbw9ji0cdb0hjnwa:pscale_pw_hsvbVM2fNMHf9ZWNa1esV5EG1pAswvgxVoQs6UISMzd@aws.connect.psdb.cloud/yasircareer?charset=utf8mb4"
 engine = create_engine(db_string, connect_args={
     "ssl": {
          "ca": "/etc/ssl/cert.pem"
