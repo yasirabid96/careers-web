@@ -17,26 +17,34 @@
             height: 360px;
             object-fit: cover;
             width: 100%;
+            margin-bottom: 16px;
         }
     </style>
 </head>
 
 <body>
     {% include 'nav.html' %}
+    <img id="banner" src="./static/covercareer.jpg" height="320px" alt="">
+
     <div class="container">
         <h1 class="text-center mt-1 mb-4">{{company}} Portal</h1>
-        <img id="banner" src="./static/covercareer.jpg" height="320px" alt="">
-        <p class="lead"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit adipisci
-                suscipit
-                expedita accusamus quo ad iure? Quas dolore dignissimos qui magni repellat tempora nulla inventore,
-                debitis, ex officia possimus!</span><span>Quas at maiores sunt. Esse dolore id repellat soluta qui
-                excepturi, nesciunt rem nostrum sint aliquid tempore assumenda explicabo est voluptas quam quae vero
-                nihil
-                ad voluptatibus. Ad, vel vitae!</span><span>Obcaecati, ipsam quasi voluptatibus blanditiis cumque
-                dignissimos nulla praesentium, explicabo maxime repudiandae culpa. Deserunt accusamus eius dolorem,
-                necessitatibus architecto repudiandae fugit quasi, neque, maxime eligendi vero iste omnis quidem?
-                Corporis!</span></p>
-        <h2 class="text-center  mt-4">Open Positions</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead">
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit adipisci suscipit expedita accusamus quo ad iure? Quas dolore dignissimos qui magni repellat tempora nulla inventore, debitis, ex officia possimus!</span>
+                    <span>Quas at maiores sunt. Esse dolore id repellat soluta qui excepturi, nesciunt rem nostrum sint aliquid tempore assumenda explicabo est voluptas quam quae vero nihil ad voluptatibus. Ad, vel vitae!</span>
+                    <span>Obcaecati, ipsam quasi voluptatibus blanditiis cumque dignissimos nulla praesentium, explicabo maxime repudiandae culpa. Deserunt accusamus eius dolorem, necessitatibus architecto repudiandae fugit quasi, neque, maxime eligendi vero iste omnis quidem? Corporis!</span>
+                </p>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <img class="img-fluid" style="max-width: 100%; height: auto;" src="./static/people.jpg" alt="">
+            </div>
+        </div>
+        
+        
+        
+        
+        <h2 class="text-center mt-4">Open Positions</h2>
         <div >
             {% for job in jobs %}
             {% include 'jobitem.html' %}
