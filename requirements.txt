@@ -3,4 +3,4 @@ PyMySQL
 SQLAlchemy
 gunicorn
 databases
-dotenv
+python-dotenv       
