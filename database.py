@@ -11,7 +11,7 @@ print(os.getenv("DB_CONNECTION"))
 db_string =os.getenv("DB_CONNECTION")
 engine = create_engine(db_string, connect_args={
     "ssl": {
-         "ca": "/etc/ssl/cert.pem"
+         "ssl_cert": "/etc/ssl/cert.pem"
     }
 })
 
