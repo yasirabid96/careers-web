@@ -1,5 +1,5 @@
 from flask import Flask,render_template,jsonify
-from database import engine,text,load_jobs_from_db
+from database import engine, load_jobs_from_db,text
 
 app = Flask(__name__)
 
@@ -53,7 +53,7 @@ def get_jobs():
     return jsonify(load_jobs_from_db())
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5003)
+    app.run(host='0.0.0.0', port=5001)
     
     
     

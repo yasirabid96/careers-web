@@ -1,9 +1,14 @@
 import sqlalchemy
 
 print(sqlalchemy.__version__)
+from dotenv import load_dotenv
+load_dotenv()
 from sqlalchemy import create_engine, text
+# get the datbase connection from env
+import os
+print(os.getenv("DB_CONNECTION"))
 
-db_string = "mysql+pymysql://ltchlbw9ji0cdb0hjnwa:pscale_pw_hsvbVM2fNMHf9ZWNa1esV5EG1pAswvgxVoQs6UISMzd@aws.connect.psdb.cloud/yasircareer?charset=utf8mb4"
+db_string =os.getenv("DB_CONNECTION")
 engine = create_engine(db_string, connect_args={
     "ssl": {
          "ca": "/etc/ssl/cert.pem"
@@ -19,7 +24,7 @@ def load_jobs_from_db():
 
         results = rs.all()
         #print("Type Results All", type(results))
-
+ 
         column_names = rs.keys()  # Get the column names
         #print("Column Names:", column_names) 
 
