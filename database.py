@@ -44,6 +44,14 @@ def load_jobs_from_db():
         
         
         #print("Results Dict:", type(results_dict))
-        #print("Results Dict:", results_dict)
+        #print("Results Dict:", results_dict) 
         
-    
+def load_job_by_id(id):
+    with engine.connect() as conn:
+        result= conn.execute(text("SELECT * from jobs where id=:id"),id=id)   
+        rows=result.all()  
+        column_names=result.keys()
+        final_results = [dict(zip(column_names, row)) for row in rows]
+        if len(rows) != 0:
+            return dict(rows[0])
+        

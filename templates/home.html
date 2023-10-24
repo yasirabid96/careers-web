@@ -12,20 +12,12 @@
 
 
     <title>Flask Project</title>
-    <style>
-        #banner {
-            height: 360px;
-            object-fit: cover;
-            width: 100%;
-            margin-bottom: 16px;
-        }
-    </style>
+   
 </head>
 
 <body>
     {% include 'nav.html' %}
-    <img id="banner" src="./static/covercareer.jpg" height="320px" alt="">
-
+    {% include 'banner.html' %}
     <div class="container">
         <h1 class="text-center mt-1 mb-4">{{company}} Portal</h1>
         <div class="row">
